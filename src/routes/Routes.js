@@ -1,12 +1,10 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 import Profile from '../components/Profile';
 import Calendar from '../components/Calendar';
 
 const Stack = createStackNavigator();
-const Drawer = createDrawerNavigator();
 
 export const Routes = ({}) => {
   return (
@@ -17,7 +15,6 @@ export const Routes = ({}) => {
             headerTitleAlign: 'center',
           }}
           >
-            {/* <Header /> */}
             <Stack.Screen
               name="Profile"
               component={Profile}
@@ -34,7 +31,6 @@ export const Routes = ({}) => {
                 headerTitleAlign: 'center',
               }}
             />
-            {/* <Stack.Screen name="Profile3" component={Profile3}/> */}
         </Stack.Navigator>
     </NavigationContainer>
   );

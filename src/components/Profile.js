@@ -11,7 +11,6 @@ import {
   Modal,
   TouchableOpacity
 } from 'react-native';
-import axios from 'axios';
 import b01 from '../images/b01.jpg'
 import b02 from '../images/b02.jpg'
 import b03 from '../images/b03.jpg'
